@@ -1,0 +1,30 @@
+.hard-soft-skills {
+    padding: 24px 24px 0px 24px;
+    margin:  36px 70px;
+    background-color: #F9F7F7;
+    border-radius: 15px;
+    border: 1px solid #CCCCCC;
+
+
+}
+
+.title {
+    margin: 0px;
+    margin-bottom: 24px;
+}
+
+.skills {
+    display: flex;
+    align-self: center;
+    flex-basis: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+}
+
+.skill{
+    padding: 3em;
+    text-align: center;
+
+}

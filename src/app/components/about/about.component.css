@@ -1,0 +1,74 @@
+.about{
+    /* background-color: #F9F7F7; */
+
+   /* border: 1px solid #CCCCCC; */
+
+    padding: 24px 24px 0px 24px;
+    margin:  36px 70px;
+
+    border-radius: 15px;
+
+    position: relative;
+    bottom: 200px;
+    margin-bottom: -200px;
+
+    display: flex;
+    justify-content: center;
+
+    box-sizing: border-box;
+    align-items: flex-end
+
+}
+
+.profile{
+    text-align: center;
+    display: block;
+    justify-content: center;
+    
+    padding: 0px 24px 0px 24px;
+
+    border-radius: 15px;
+
+    background-color: #F9F7F7;
+    border: 1px solid #CCCCCC;
+
+}
+
+.pfp{
+    height: 200px;
+    width: 200px;
+    padding: 24px;
+    border-radius: 100%;
+
+}
+
+.name{
+    margin: 0 0 10px 0px;
+
+}
+
+.shortdesc{
+    display: block;
+
+}
+
+.ubication{
+    display: block;
+    margin: 10px 0px;
+
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0px 24px 24px 24px;
+    border-radius: 15px;
+    background-color: #F9F7F7;
+    margin: 24px 0px 0px 36px;
+}
+
+.title{
+    margin: 24px 0 18px 0;
+}
+

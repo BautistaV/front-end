@@ -1,0 +1,21 @@
+{
+    "name": "Bautista Varela",
+    "banner": "https://s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2018/07/05182149/dogecoin-1.jpg",
+    "image": "https://cdn.discordapp.com/attachments/723191079695810651/997279754455621652/a9ef7a003c09136bed7b6aad7fa1702a.png",
+    "position": "Estudiante",
+    "ubication": "Buenos Aires (Argentina)",
+    "about": "Estudiante universitario de Ingenieria.",
+
+    "company": [{
+        "name": "Universidad nacional de la Plata",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/UNLP_Logo_%28cropped%29.svg/1200px-UNLP_Logo_%28cropped%29.svg.png",
+        "url": "https://unlp.edu.ar/"
+    }],
+
+    "school":[{
+    "name": "Facultad de Ingeniería de la Universidad Nacional de La Plata",
+    "img":"https://pbs.twimg.com/profile_images/922538764144177154/a4EgeBq__400x400.jpg",
+    "url": "https://www.ing.unlp.edu.ar/"
+    }]
+
+}

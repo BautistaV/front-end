@@ -1,0 +1,42 @@
+.education {
+    padding: 24px 24px 0px 24px;
+    margin:  36px 70px;
+    background-color: #F9F7F7;
+    border-radius: 15px;
+    border: 1px solid #CCCCCC;
+}
+
+.title{
+    margin: 0px;
+    margin-bottom: 24px;
+}
+
+.media{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+
+.img{
+    flex-basis: 65px; /* <------ se pone el escudo de cambrigde gordo PERO alinea bien*/
+    height: 65px;
+}
+
+.info{
+    padding: 1px;
+}
+
+.name{
+    margin: 0px;
+}
+
+.desc{
+    display: block;
+    margin: 10px 0px;
+}
+
+.time{
+    display: block;
+    color: #727272;
+}
