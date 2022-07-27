@@ -5,6 +5,8 @@ footer{
     bottom: 0px;
     width: 100%;
     overflow: hidden;
+}
 
-
+.firma{
+    padding: 10px;
 }

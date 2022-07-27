@@ -28,6 +28,7 @@
     padding: 0px 24px 0px 24px;
 
     border-radius: 15px;
+    
 
     background-color: #F9F7F7;
     border: 1px solid #CCCCCC;
@@ -35,8 +36,8 @@
 }
 
 .pfp{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     padding: 24px;
     border-radius: 100%;
 
