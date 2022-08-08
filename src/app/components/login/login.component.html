@@ -1,27 +1,42 @@
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" *ngIf="!isLogged" data-bs-target="#loginModal" >Login</button>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<button type="button" class="btn btn-danger" (click)="onLogOut()" *ngIf="isLogged">Logout</button>
+
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Ingreso Administrador</h5>
+                <h5 class="modal-title" id="loginModalLabel">Ingreso Administrador</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="Usuario">
-                    <label for="floatingInput">Usuario</label>
-                </div>
-                <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
-                    <label for="floatingPassword">Contraseña</label>
-                </div>               
-            </div>
 
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary">Login</button>
-            </div>
+            <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+
+                <div class="modal-body">
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="nombreUsuario" placeholder="Usuario" [(ngModel)]="nombreUsuario" name="user" requiered/>
+                        <label for="nombreUsuario">Usuario</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="password" placeholder="Contraseña" [(ngModel)]="password" name="password" requiered/>
+                        <label for="password">Contraseña</label>
+                    </div>               
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                    <button type="button submit" class="btn btn-success" (click)='onLogin()' data-bs-dismiss="modal">Login</button>
+
+                    
+
+                </div>
+            </form>
+
         </div>
     </div>
 </div>

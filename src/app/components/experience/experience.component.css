@@ -18,6 +18,18 @@
     margin-bottom: 30px;
 }
 
+.toptitle{
+    display: flex;
+    gap: 20px;
+}
+.newexp{
+    height: 30px;
+}
+
+.buttons-media{
+    display: flex;
+    gap: 20px;
+}
 
 .img{
     flex-basis: 65px; /* <------ se pone el escudo de cambrigde gordo PERO alinea bien*/

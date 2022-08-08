@@ -1,0 +1,39 @@
+<button type="button" class="newexp btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#expModal">
+    Nueva experiencia
+</button>
+
+<div class="modal fade" id="expModal" tabindex="-1" aria-labelledby="expModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="expModalLabel">Nueva experiencia</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm" >
+                <div class="modal-body">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="expName" placeholder="Experiencia" name="expName"
+                            [(ngModel)]="expName" required />
+                        <label for="expName">Experiencia</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="expDesc" placeholder="Descripción" name="expDesc"
+                            [(ngModel)]="expDesc" required />
+                        <label for="expDesc">Descripción</label>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+
+                    <button type="button submit" class="btn btn-success" data-bs-dismiss="modal">
+                        Crear
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
