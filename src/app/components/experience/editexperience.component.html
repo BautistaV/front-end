@@ -1,5 +1,5 @@
 <button type="button" class="editexpe btn btn-outline-warning btn-sm" data-bs-toggle="modal"
-    data-bs-target="#editExpModal">
+    data-bs-target="#editExpModal"  >
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square"
         viewBox="0 0 16 16">
         <path
@@ -18,7 +18,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
-            <form *ngIf="workexp" (ngSubmit)="onUpdate()" #f="ngForm">
+           <form *ngIf="workexp" (ngSubmit)="onUpdate()" #f="ngForm" novalidate>
                 <div class="modal-body">
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="expName" placeholder="Experiencia" name="expName" [(ngModel)]="workexp.expName"/>
@@ -39,7 +39,9 @@
                         Actualizar
                     </button>
                 </div>
-            </form>
+            </form>  
+            
         </div>
     </div>
 </div>
+

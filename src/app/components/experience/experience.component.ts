@@ -9,7 +9,7 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
-  exper: Experience[] = [];
+  listaDeExperiencias: Experience[] = [];
 
   constructor(private ExpService: ExperienceService, private tokenService: TokenService) {
 
@@ -30,7 +30,9 @@ export class ExperienceComponent implements OnInit {
   }
 
   loadExperience(): void {
-    this.ExpService.list().subscribe(data => { this.exper = data; })
+    this.ExpService.list().subscribe(data => { this.listaDeExperiencias = data; 
+    console.log(data);
+    })
 
   }
 

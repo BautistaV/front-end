@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -17,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { InterceptorService } from './service/interceptor.service';
 import { NewexperienceComponent } from './components/experience/newexperience.component';
 import { EditexperienceComponent } from './components/experience/editexperience.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +31,7 @@ import { EditexperienceComponent } from './components/experience/editexperience.
     LoginComponent,
     NewexperienceComponent,
     EditexperienceComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
