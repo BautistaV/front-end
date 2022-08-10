@@ -25,7 +25,7 @@ export class EditexperienceComponent implements OnInit {
         next: (data) =>{
           this.workexp = data;
         },error: (err) =>{
-       //   alert("Error al modificar experiencia");
+       alert("Error al modificar experiencia");
           this.router.navigate(['/']);
         }
      })
@@ -40,7 +40,7 @@ export class EditexperienceComponent implements OnInit {
         next: (data) =>{
           this.router.navigate(['/']);
         }, error: (err) =>{
-        //   alert("Error al modificar experiencia");
+       alert("Error al modificar experiencia");
            this.router.navigate(['/']);
         }
     })

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+
 import { LoginUser } from 'src/app/model/login-user';
 import { AuthService } from 'src/app/service/auth.service';
 import { TokenService } from 'src/app/service/token.service';
@@ -23,8 +23,7 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private tokenService: TokenService,
-    private authService: AuthService,
-    private router: Router) { }
+    private authService: AuthService) { }
 
   ngOnInit(): void {
     if(this.tokenService.getToken()){

@@ -1,4 +1,4 @@
-<button type="button" routerLink="/newexperience" class="newexp btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#expModal">
+<button type="button" class="newexp btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#expModal">
     Nueva experiencia
 </button>
 
@@ -6,7 +6,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="expModalLabel">Nueva experiencia</h5>
+                <h5 class="modal-title" id="expModalLabel">Agregar una nueva experiencia</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
@@ -17,10 +17,20 @@
                             [(ngModel)]="expName" required />
                         <label for="expName">Experiencia</label>
                     </div>
-                    <div class="form-floating">
+                    <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="expDesc" placeholder="Descripción" name="expDesc"
                             [(ngModel)]="expDesc" required />
                         <label for="expDesc">Descripción</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="expDesc" placeholder="Fecha" name="expTime"
+                            [(ngModel)]="expTime" required />
+                        <label for="expTime">Fecha</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="expDesc" placeholder="URL de la Imagen" name="expImg"
+                            [(ngModel)]="expImg" required />
+                        <label for="expImg">URL de la Imagen</label>
                     </div>
                 </div>
 

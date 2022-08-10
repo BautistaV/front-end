@@ -9,7 +9,7 @@
         <app-newexperience *ngIf="isLogged"></app-newexperience>
     </div>
     <div class="media" *ngFor="let exper of listaDeExperiencias">
-        <img class="img" src="assets\img\secretario.png" />
+        <img class="img" src={{exper.expImg}}/>
         <div class="info">
 
             <h3 class="name">{{exper.expName}}</h3>
