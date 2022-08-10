@@ -1,15 +1,15 @@
-<div class="about">
+<div class="about"  *ngFor="let persona of person">
 
     <div class="profile">
-        <img class="pfp" src="assets\img\pfp.jpg" />
-        <h3 class="name">{{persona.nombre}} {{persona.apellido}}</h3>
-        <span class="shortdesc">Full Stack Developer Jr.</span>
-        <span class="ubication">La Plata, Buenos Aires, Argentina</span>
+        <img class="pfp" src="{{persona.persImg}}" />
+        <h3 class="name">{{persona.persNombre}} {{persona.persApellido}}</h3>
+        <span class="shortdesc">{{persona.persTitulo}}</span>
+        <span class="ubication">{{persona.persLocalidad}}</span>
     </div>
 
     <div class="about-me">
         <h3 class="title">Acerca de</h3>
-        <span class="longdesc">Estudiante Universitario de tercer año de Ingenieria Electrónica e Ingenieria Industrial en la Facultad de Ingenieria de La Plata. Apasionado por la tecnología, el arte, la ciencia y la música.</span>
+        <span class="longdesc">{{persona.persAbout}}</span>
     </div>
 
 </div>
