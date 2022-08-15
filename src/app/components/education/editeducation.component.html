@@ -1,0 +1,44 @@
+<app-header></app-header>
+
+<div class="editeducation">
+    <h3>Edicion de educación</h3>
+          <form *ngIf="education" (ngSubmit)="onUpdate()" #f="ngForm" novalidate>
+
+                <div class="formulario">
+
+                    <div class="form-floating mb-3 form-group">
+                        <input type="text" class="form-control" id="eduName" placeholder="Experiencia" name="eduName" [(ngModel)]="education.eduName" required/>
+                        <label for="eduName">Experiencia</label>
+                    </div>
+
+                    <div class="form-floating mb-3 form-group">
+                        <input type="text" class="form-control" id="eduDesc" placeholder="Descripción" name="eduDesc" [(ngModel)]="education.eduDesc" required/>
+                        <label for="eduDesc">Descripción</label>
+                    </div>
+
+                    <div class="form-floating mb-3 form-group">
+                        <input type="text" class="form-control" id="eduTime" placeholder="Fecha" name="eduTime" [(ngModel)]="education.eduTime" required/>
+                        <label for="eduTime">Fecha</label>
+                    </div>
+
+                    <div class="form-floating mb-3 form-group">
+                        <input type="text" class="form-control" id="eduImg" placeholder="URL de la imagen" name="eduImg" [(ngModel)]="education.eduImg" required/>
+                        <label for="eduImg">Url de la imagen</label>
+                    </div>
+
+                </div>
+
+                <div class="buttons">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="editexperience" routerLink="/">
+                        Cerrar
+                    </button>
+
+                    <button type="button submit" class="btn btn-success" data-bs-dismiss="editexperience" >
+                        Actualizar
+                    </button>
+                </div>
+            </form>  
+</div>
+
+
+<app-footer class="fixed-bottom"></app-footer>

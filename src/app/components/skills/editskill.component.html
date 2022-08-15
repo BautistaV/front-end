@@ -1,0 +1,34 @@
+<app-header></app-header>
+
+<div class="editskill">
+    <h3>Edicion de habilidad</h3>
+          <form *ngIf="skills" (ngSubmit)="onUpdate()" #f="ngForm" novalidate>
+
+                <div class="formulario">
+
+                    <div class="form-floating mb-3 form-group">
+                        <input type="text" class="form-control" id="expName" placeholder="Experiencia" name="expName" [(ngModel)]="skills.skillName" required/>
+                        <label for="expName">Experiencia</label>
+                    </div>
+
+                    <div class="form-floating mb-3 form-group">
+                        <input type="text" class="form-control" id="expDesc" placeholder="Descripción" name="expDesc" [(ngModel)]="skills.skillPercent" required/>
+                        <label for="expDesc">Descripción</label>
+                    </div>
+
+                </div>
+
+                <div class="buttons">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="editexperience" routerLink="/">
+                        Cerrar
+                    </button>
+
+                    <button type="button submit" class="btn btn-success" data-bs-dismiss="editexperience" >
+                        Actualizar
+                    </button>
+                </div>
+            </form>  
+</div>
+
+
+<app-footer class="fixed-bottom"></app-footer>

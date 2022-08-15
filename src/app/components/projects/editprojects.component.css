@@ -1,0 +1,14 @@
+.buttons{
+    display:flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center
+}
+
+.editprojects{
+    padding: 24px 24px 16px 24px;
+    margin:  36px 70px; /*vertical horizontal */
+    background-color: #F9F7F7;
+    border-radius: 15px;
+    border: 1px solid #CCCCCC;
+}

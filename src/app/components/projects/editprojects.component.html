@@ -1,0 +1,49 @@
+<app-header></app-header>
+
+<div class="editeducation">
+    <h3>Edicion de proyectos</h3>
+          <form *ngIf="projects" (ngSubmit)="onUpdate()" #f="ngForm" novalidate>
+
+                <div class="formulario">
+
+                    <div class="form-floating mb-3 form-group">
+                        <input type="text" class="form-control" id="projName" placeholder="Proyecto" name="projName" [(ngModel)]="projects.projName" required/>
+                        <label for="projName">Experiencia</label>
+                    </div>
+
+                    <div class="form-floating mb-3 form-group">
+                        <input type="text" class="form-control" id="projDesc" placeholder="Descripción" name="projDesc" [(ngModel)]="projects.projDesc" required/>
+                        <label for="projDesc">Descripción</label>
+                    </div>
+
+                    <div class="form-floating mb-3 form-group">
+                        <input type="text" class="form-control" id="projTime" placeholder="Fecha" name="projTime" [(ngModel)]="projects.projTime" required/>
+                        <label for="projTime">Fecha</label>
+                    </div>
+
+                    <div class="form-floating mb-3 form-group">
+                        <input type="text" class="form-control" id="projImg" placeholder="URL de la imagen" name="projImg" [(ngModel)]="projects.projImg" required/>
+                        <label for="projImg">Url de la imagen</label>
+                    </div>
+
+                    <div class="form-floating mb-3 form-group">
+                        <input type="text" class="form-control" id="projLink" placeholder="URL del proyecto" name="projLink" [(ngModel)]="projects.projLink" required/>
+                        <label for="projLink">Url de la imagen</label>
+                    </div>
+
+                </div>
+
+                <div class="buttons">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="editexperience" routerLink="/">
+                        Cerrar
+                    </button>
+
+                    <button type="button submit" class="btn btn-success" data-bs-dismiss="editexperience" >
+                        Actualizar
+                    </button>
+                </div>
+            </form>  
+</div>
+
+
+<app-footer class="fixed-bottom"></app-footer>

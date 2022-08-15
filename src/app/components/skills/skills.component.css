@@ -8,6 +8,17 @@
 
 }
 
+.buttons-media{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.toptitle{
+    display:flex;
+    gap: 20px;
+}
+
 .title {
     margin: 0px;
     margin-bottom: 24px;

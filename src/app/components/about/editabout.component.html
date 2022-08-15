@@ -1,0 +1,55 @@
+<app-header></app-header>
+
+<div class="editeabout">
+    <h3>Edicion de About</h3>
+          <form *ngIf="person" (ngSubmit)="onUpdate()" #f="ngForm" novalidate>
+
+                <div class="formulario">
+
+                    <div class="form-floating mb-3 form-group">
+                        <input type="text" class="form-control" id="persNombre" placeholder="Nombre" name="persNombre" [(ngModel)]="person.persNombre" required/>
+                        <label for="persNombre">Experiencia</label>
+                    </div>
+
+                    <div class="form-floating mb-3 form-group">
+                        <input type="text" class="form-control" id="persApellido" placeholder="Apellido" name="persApellido" [(ngModel)]="person.persApellido" required/>
+                        <label for="persApellido">Descripción</label>
+                    </div>
+
+                    <div class="form-floating mb-3 form-group">
+                        <input type="text" class="form-control" id="persLocalidad" placeholder="Fecha" name="persLocalidad" [(ngModel)]="person.persLocalidad" required/>
+                        <label for="persLocalidad">Localidad</label>
+                    </div>
+
+                    <div class="form-floating mb-3 form-group">
+                        <input type="text" class="form-control" id="persTitulo" placeholder="Título" name="persTitulo" [(ngModel)]="person.persTitulo" required/>
+                        <label for="persTitulo">Título</label>
+                    </div>
+
+                    <div class="form-floating mb-3 form-group">
+                        <input type="text" class="form-control" id="persImg" placeholder="URL de la imagen" name="persImg" [(ngModel)]="person.persImg" required/>
+                        <label for="persImg">Título</label>
+                    </div>
+
+                    <div class="form-floating mb-3 form-group">
+                        <input type="text" class="form-control" id="persAbout" placeholder="URL de la imagen" name="persAbout" [(ngModel)]="person.persAbout" required/>
+                        <label for="persAbout">Título</label>
+                    </div>
+
+                </div>
+
+                <div class="buttons">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="editexperience" routerLink="/">
+                        Cerrar
+                    </button>
+
+                    <button type="button submit" class="btn btn-success" data-bs-dismiss="editexperience" >
+                        Actualizar
+                    </button>
+                </div>
+            </form>  
+</div>
+
+
+<app-footer></app-footer>
+

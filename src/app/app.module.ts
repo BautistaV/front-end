@@ -17,6 +17,13 @@ import { InterceptorService } from './service/interceptor.service';
 import { NewexperienceComponent } from './components/experience/newexperience.component';
 import { EditexperienceComponent } from './components/experience/editexperience.component';
 import { HomeComponent } from './components/home/home.component';
+import { NeweducationComponent } from './components/education/neweducation.component';
+import { EditeducationComponent } from './components/education/editeducation.component';
+import { EditaboutComponent } from './components/about/editabout.component';
+import { NewprojectsComponent } from './components/projects/newprojects.component';
+import { EditprojectsComponent } from './components/projects/editprojects.component';
+import { NewskillComponent } from './components/skills/newskill.component';
+import { EditskillComponent } from './components/skills/editskill.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +39,13 @@ import { HomeComponent } from './components/home/home.component';
     NewexperienceComponent,
     EditexperienceComponent,
     HomeComponent,
+    NeweducationComponent,
+    EditeducationComponent,
+    EditaboutComponent,
+    NewprojectsComponent,
+    EditprojectsComponent,
+    NewskillComponent,
+    EditskillComponent,
   ],
   imports: [
     BrowserModule,

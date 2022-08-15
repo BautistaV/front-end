@@ -1,0 +1,49 @@
+<button type="button" class="newedu btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#eduModal">
+    Nueva experiencia
+</button>
+
+<div class="modal fade" id="eduModal" tabindex="-1" aria-labelledby="eduModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="eduModalLabel">Agregar una nueva educación</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm" >
+                <div class="modal-body">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="eduName" placeholder="Institución" name="eduName"
+                            [(ngModel)]="eduName" required />
+                        <label for="eduName">Experiencia</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="eduDesc" placeholder="Título" name="eduDesc"
+                            [(ngModel)]="eduDesc" required />
+                        <label for="eduDesc">Descripción</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="eduTime" placeholder="Fecha" name="eduTime"
+                            [(ngModel)]="eduTime" required />
+                        <label for="eduTime">Fecha</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="eduImg" placeholder="URL de la Imagen" name="eduImg"
+                            [(ngModel)]="eduImg" required />
+                        <label for="eduImg">URL de la Imagen</label>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+
+                    <button type="button submit" class="btn btn-success" data-bs-dismiss="modal">
+                        Crear
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

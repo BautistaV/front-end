@@ -20,6 +20,11 @@
 
 }
 
+.buttons-media{
+    display: flex;
+    justify-content: center;
+}
+
 .profile{
     text-align: center;
     display: block;

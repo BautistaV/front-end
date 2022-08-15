@@ -1,0 +1,54 @@
+<button type="button" class="newedu btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projModal">
+    Nueva experiencia
+</button>
+
+<div class="modal fade" id="projModal" tabindex="-1" aria-labelledby="projModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projModalLabel">Agregar un nuevo proyecto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm" >
+                <div class="modal-body">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="projName" placeholder="Nombre del proyecto" name="projName"
+                            [(ngModel)]="projName" required />
+                        <label for="projName">Nombre del proyecto</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="projDesc" placeholder="Descripción" name="projDesc"
+                            [(ngModel)]="projDesc" required />
+                        <label for="projDesc">Descripción</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="projTime" placeholder="Fecha" name="projime"
+                            [(ngModel)]="projTime" required />
+                        <label for="projTime">Fecha</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="projLink" placeholder="URL del proyecto" name="projLink"
+                            [(ngModel)]="projLink" required />
+                        <label for="projLink">URL del proyecto</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="projImg" placeholder="URL de la Imagen" name="projImg"
+                            [(ngModel)]="projImg" required />
+                        <label for="projImg">URL de la Imagen</label>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+
+                    <button type="button submit" class="btn btn-success" data-bs-dismiss="modal">
+                        Crear
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
