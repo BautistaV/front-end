@@ -10,16 +10,10 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
- // person: Person = new Person("","","","","","");
 
  person: Person[] = [];
 
   constructor(public personService: PersonService, private tokenService: TokenService) { }
-
- /* ngOnInit(): void {
-    this.personService.detail(1).subscribe(data => {this.person = data})
-  }
-*/
 
 
   isLogged = false;
@@ -44,16 +38,3 @@ export class AboutComponent implements OnInit {
   }
 
 }
-
-/*
-export class AboutComponent implements OnInit {
-  persona: persona = new persona("","","");
-
-  constructor(public personaService: PersonaService) { }
-
-  ngOnInit(): void {
-    this.personaService.getPersona().subscribe(data => {this.persona = data})
-  }
-
-}
-*/

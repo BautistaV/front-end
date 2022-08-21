@@ -12,8 +12,9 @@ export class NewprojectsComponent implements OnInit {
 
   constructor(private projService: ProjectsService, private router: Router) { }
 
-  projDesc: string = '';
+
   projName: string = '';
+  projDesc: string = '';
   projTime: string = '';
   projLink: string = '';
   projImg: string = '';
@@ -22,10 +23,10 @@ export class NewprojectsComponent implements OnInit {
   }
 
   onCreate(): void {
-    const edu = new Projects(this.projDesc, this.projName, this.projTime, this.projImg, this.projLink);
+    const edu = new Projects( this.projName, this.projDesc, this.projTime, this.projImg, this.projLink);
     this.projService.save(edu).subscribe({
       next: (data) =>{
-        alert("Educación añadida");
+        alert("Proyecto añadido");
         this.router.navigate(['/']);
         window.location.reload();
       }, error: (err) =>{

@@ -9,9 +9,10 @@ import { Person } from '../model/person';
 
 export class PersonService {
 
-  URL = 'http://localhost:8080/person/';
+  //URL = 'http://localhost:8080/person/';
 
-  
+  URL = 'https://backendportfoliobautista.herokuapp.com/person/';
+
   constructor(private httpClient: HttpClient) { }
   
  /*   public getPerson(): Observable<Person> {

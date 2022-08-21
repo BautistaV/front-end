@@ -7,8 +7,8 @@ import { Experience } from '../model/experience';
   providedIn: 'root'
 })
 export class ExperienceService {
-  expURL ='http://localhost:8080/workexp/'
-
+ // expURL ='http://localhost:8080/workexp/'
+ expURL ='https://backendportfoliobautista.herokuapp.com/workexp/'
   constructor(private httpClient: HttpClient) { }
 
   public list(): Observable<Experience[]>{

@@ -29,7 +29,7 @@
 }
 
 .img{
-    flex-basis: 65px; /* <------ se pone el escudo de cambrigde gordo PERO alinea bien*/
+    flex-basis: 65px;
     height: 65px;
 }
 

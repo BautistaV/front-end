@@ -1,6 +1,6 @@
 .experience {
     padding: 24px 24px 0px 24px;
-    margin:  36px 70px; /*vertical horizontal */
+    margin:  36px 70px;
     background-color: #F9F7F7;
     border-radius: 15px;
     border: 1px solid #CCCCCC;
@@ -32,7 +32,7 @@
 }
 
 .img{
-    flex-basis: 65px; /* <------ se pone el escudo de cambrigde gordo PERO alinea bien*/
+    flex-basis: 65px;
     height: 65px;
 }
 

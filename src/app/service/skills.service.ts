@@ -8,7 +8,8 @@ import { Skills } from '../model/skills';
 })
 export class SkillsService {
 
-    URL ='http://localhost:8080/skills/'
+    URL ='https://backendportfoliobautista.herokuapp.com/skills/'
+    //URL ='http://localhost:8080/skills/'
   
     constructor(private httpClient: HttpClient) { }
   
