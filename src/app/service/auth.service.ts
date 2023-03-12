@@ -11,7 +11,7 @@ import { NewUser } from '../model/new-user';
 export class AuthService {
  // authURL = 'http://localhost:8080/auth/'
 
-  authURL = 'https://backendportfoliobautista.herokuapp.com/auth/'
+  authURL = 'https://back-end-production-3251.up.railway.app/auth/'
 
   constructor(private httpClient: HttpClient) { }
 

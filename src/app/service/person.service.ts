@@ -11,7 +11,7 @@ export class PersonService {
 
   //URL = 'http://localhost:8080/person/';
 
-  URL = 'https://backendportfoliobautista.herokuapp.com/person/';
+  URL = 'https://back-end-production-3251.up.railway.app/person/';
 
   constructor(private httpClient: HttpClient) { }
   
